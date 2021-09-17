@@ -1,4 +1,4 @@
-# postgresql-local-db-dump
+# postgresql-production-db-dump
 ## Description
 A bash script that creates a local database dump with output in script file format from a postgresql production database.
 ## Installation
