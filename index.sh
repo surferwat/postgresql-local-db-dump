@@ -13,6 +13,13 @@ then
   exit 1
 fi
 
+if [ ! -d $DUMP_TO_PATH ]
+then
+ echo "$DUMP_TO_PATH does not exist"
+ echo "...exiting"
+ exit 1
+fi
+
 # Dump data for production db in script format
 echo "...creating data dump of production db"
 sudo -u postgres pg_dump -O -x --cluster 13/main $PRODUCTION_DB_URL > ${DUMP_TO_PATH}/production_dump.sql
