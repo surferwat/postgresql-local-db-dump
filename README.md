@@ -10,6 +10,8 @@ git clone https://github.com/surferwat/postgresql-local-db-dump.git
 ```
 bash index.sh <postgresql production database url> <path/to/output/file>
 ```
+## To Do
+* [ ] add pre-condition check for production db connection
 ## References
 * [Backup and Restore](https://www.postgresql.org/docs/8.1/backup.html)
 * [pg_dump](https://www.postgresql.org/docs/9.3/app-pgdump.html)
