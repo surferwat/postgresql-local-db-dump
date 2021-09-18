@@ -4,7 +4,7 @@ A bash script that creates a local data dump in script file format from a postgr
 
 Input
 * `<database_url>` - the url for a postgresql database in format, postgres://{user}:{password}@{server}:{port}/{db_name}
-* `<file_path> - the file path to where output files should be placed 
+* `<file_path>` - the file path to where output files should be placed 
 
 Output
 * production_dump.sql
