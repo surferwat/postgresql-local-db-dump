@@ -1,14 +1,23 @@
 # postgresql-production-db-dump
 ## Description
-A bash script that creates a local data dump in script file format from a postgresql production database for the purpose of helping developers setup a local database. The script takes two arguments. The first argument is the postgresql database url. The second argument is the output file path.
+A bash script that creates a local data dump in script file format from a postgresql production database for the purpose of helping developers setup a local database. 
+
+Input
+* `<database_url>` - the url for a postgresql database in format, postgres://{user}:{password}@{server}:{port}/{db_name}
+* `<file_path> - the file path to where output files should be placed 
+
+Output
+* production_dump.sql
+* local_dump.sql
+
 ## Installation
 Step 1: Clone the repo
 ```
-git clone https://github.com/surferwat/postgresql-local-db-dump.git
+git clone https://github.com/surferwat/postgresql-production-db-dump.git
 ```
 ## Usage
 ```
-bash index.sh <postgresql production database url> <path/to/output/file>
+bash index.sh <database_url> <file_path>
 ```
 ## To Do
 * [ ] add pre-condition check for production db connection
