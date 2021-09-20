@@ -7,12 +7,12 @@ CURRENT_DATE=`date +"%Y-%m-%d"`
 
 # Function to check pre- and post-conditions
 check_condition() {
- if [ $1 ] 
- then 
-  echo $2
-  echo "...exiting"
-  exit 1
- fi
+    if [ $1 ] 
+    then 
+        echo $2
+        echo "...exiting"
+        exit 1
+    fi
 }
 
 # Check pre-conditions
